@@ -86,7 +86,7 @@
             </objects>
             <point key="canvasLocation" x="705" y="134"/>
         </scene>
-        <!--Item 2-->
+        <!--Chat-->
         <scene sceneID="m5d-w7-clz">
             <objects>
                 <viewController id="jj2-zR-CLM" sceneMemberID="viewController">
@@ -96,13 +96,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="uNW-yN-TIz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="YEe-ms-8U2"/>
+                    <tabBarItem key="tabBarItem" title="Chat" image="chat" id="YEe-ms-8U2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wez-Ib-TTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2425" y="467"/>
         </scene>
-        <!--Item 1-->
+        <!--Drawing-->
         <scene sceneID="fli-GH-OCq">
             <objects>
                 <viewController id="T0z-6f-hIj" sceneMemberID="viewController">
@@ -112,7 +112,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="UX0-5j-jXS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="vZ0-uG-C6V"/>
+                    <tabBarItem key="tabBarItem" title="Drawing" image="pen" id="vZ0-uG-C6V"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPM-e7-HJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,5 +139,7 @@
     </scenes>
     <resources>
         <image name="Logo" width="150" height="150"/>
+        <image name="chat" width="24" height="24"/>
+        <image name="pen" width="24" height="24"/>
     </resources>
 </document>
