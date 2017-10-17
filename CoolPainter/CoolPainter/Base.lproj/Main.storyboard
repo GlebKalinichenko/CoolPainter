@@ -93,14 +93,35 @@
                     <view key="view" contentMode="scaleToFill" id="e7N-hV-mgX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fkk-dY-FU0">
+                                <rect key="frame" x="62.5" y="580" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Owj-Qp-SIA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRd-Px-fal">
+                                <rect key="frame" x="320" y="580" width="36" height="30"/>
+                                <state key="normal" title="Send"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PRd-Px-fal" firstAttribute="leading" secondItem="Fkk-dY-FU0" secondAttribute="trailing" constant="7.5" id="Mpb-gv-n37"/>
+                            <constraint firstItem="uNW-yN-TIz" firstAttribute="bottom" secondItem="PRd-Px-fal" secondAttribute="bottom" constant="8" id="Ojs-cJ-OBP"/>
+                            <constraint firstItem="uNW-yN-TIz" firstAttribute="bottom" secondItem="Fkk-dY-FU0" secondAttribute="bottom" constant="8" id="PLc-2b-A3f"/>
+                            <constraint firstItem="Fkk-dY-FU0" firstAttribute="centerX" secondItem="uNW-yN-TIz" secondAttribute="centerX" id="UcR-v0-6sp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uNW-yN-TIz"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Chat" image="chat" id="YEe-ms-8U2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wez-Ib-TTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2425" y="467"/>
+            <point key="canvasLocation" x="2424.8000000000002" y="466.41679160419795"/>
         </scene>
         <!--Drawing-->
         <scene sceneID="fli-GH-OCq">
