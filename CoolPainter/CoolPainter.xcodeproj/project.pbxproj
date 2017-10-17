@@ -15,6 +15,7 @@
 		FAA7BED61F96742D005A8FC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA7BED41F96742D005A8FC7 /* LaunchScreen.storyboard */; };
 		FAA7BEE11F96742D005A8FC7 /* CoolPainterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7BEE01F96742D005A8FC7 /* CoolPainterTests.swift */; };
 		FAA7BEEC1F96742D005A8FC7 /* CoolPainterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7BEEB1F96742D005A8FC7 /* CoolPainterUITests.swift */; };
+		FAA7BEFA1F9686E6005A8FC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7BEF91F9686E6005A8FC7 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FAA7BEE71F96742D005A8FC7 /* CoolPainterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolPainterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA7BEEB1F96742D005A8FC7 /* CoolPainterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolPainterUITests.swift; sourceTree = "<group>"; };
 		FAA7BEED1F96742D005A8FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA7BEF91F9686E6005A8FC7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				FAA7BED41F96742D005A8FC7 /* LaunchScreen.storyboard */,
 				FAA7BED71F96742D005A8FC7 /* Info.plist */,
 				FAA7BECF1F96742D005A8FC7 /* CoolPainter.xcdatamodeld */,
+				FAA7BEF91F9686E6005A8FC7 /* LoginViewController.swift */,
 			);
 			path = CoolPainter;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA7BEFA1F9686E6005A8FC7 /* LoginViewController.swift in Sources */,
 				FAA7BECB1F96742D005A8FC7 /* ViewController.swift in Sources */,
 				FAA7BED11F96742D005A8FC7 /* CoolPainter.xcdatamodeld in Sources */,
 				FAA7BEC91F96742D005A8FC7 /* AppDelegate.swift in Sources */,
