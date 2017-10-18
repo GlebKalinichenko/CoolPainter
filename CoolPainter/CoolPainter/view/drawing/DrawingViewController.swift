@@ -9,7 +9,8 @@
 import UIKit
 
 class DrawingViewController: UIViewController {
-
+    var nickName: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

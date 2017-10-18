@@ -27,7 +27,12 @@ class LoginViewController: UIViewController {
                 fatalError()
             }
             
+            guard let drawingViewController = chatDrawerContentViewContoller.viewControllers![1] as? DrawingViewController else {
+                fatalError()
+            }
+            
             chatViewContoller.nickName = nickNameTextField.text
+            drawingViewController.nickName = nickNameTextField.text
         }
     }
     
