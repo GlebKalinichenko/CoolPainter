@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA55D06E1F97E2AE001614B0 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55D06D1F97E2AE001614B0 /* ChatViewController.swift */; };
+		FA55D0731F97E2F7001614B0 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55D0721F97E2F7001614B0 /* DrawingViewController.swift */; };
+		FA55D0761F97EC4F001614B0 /* ChatDrawingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55D0751F97EC4F001614B0 /* ChatDrawingTabBarViewController.swift */; };
 		FAA7BEC91F96742D005A8FC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7BEC81F96742D005A8FC7 /* AppDelegate.swift */; };
 		FAA7BECB1F96742D005A8FC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7BECA1F96742D005A8FC7 /* ViewController.swift */; };
 		FAA7BECE1F96742D005A8FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA7BECC1F96742D005A8FC7 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA55D06D1F97E2AE001614B0 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		FA55D0721F97E2F7001614B0 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		FA55D0751F97EC4F001614B0 /* ChatDrawingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDrawingTabBarViewController.swift; sourceTree = "<group>"; };
 		FAA7BEC51F96742D005A8FC7 /* CoolPainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolPainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA7BEC81F96742D005A8FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA7BECA1F96742D005A8FC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +84,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA55D06F1F97E2B9001614B0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FA55D0771F97ECB5001614B0 /* common */,
+				FA55D0741F97E3B0001614B0 /* login */,
+				FA55D0711F97E2E6001614B0 /* drawing */,
+				FA55D0701F97E2C0001614B0 /* chat */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FA55D0701F97E2C0001614B0 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				FA55D06D1F97E2AE001614B0 /* ChatViewController.swift */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
+		FA55D0711F97E2E6001614B0 /* drawing */ = {
+			isa = PBXGroup;
+			children = (
+				FA55D0721F97E2F7001614B0 /* DrawingViewController.swift */,
+			);
+			path = drawing;
+			sourceTree = "<group>";
+		};
+		FA55D0741F97E3B0001614B0 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				FAA7BEF91F9686E6005A8FC7 /* LoginViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		FA55D0771F97ECB5001614B0 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				FA55D0751F97EC4F001614B0 /* ChatDrawingTabBarViewController.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		FAA7BEBC1F96742D005A8FC7 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +150,7 @@
 		FAA7BEC71F96742D005A8FC7 /* CoolPainter */ = {
 			isa = PBXGroup;
 			children = (
+				FA55D06F1F97E2B9001614B0 /* view */,
 				FAA7BEC81F96742D005A8FC7 /* AppDelegate.swift */,
 				FAA7BECA1F96742D005A8FC7 /* ViewController.swift */,
 				FAA7BECC1F96742D005A8FC7 /* Main.storyboard */,
@@ -108,7 +158,6 @@
 				FAA7BED41F96742D005A8FC7 /* LaunchScreen.storyboard */,
 				FAA7BED71F96742D005A8FC7 /* Info.plist */,
 				FAA7BECF1F96742D005A8FC7 /* CoolPainter.xcdatamodeld */,
-				FAA7BEF91F9686E6005A8FC7 /* LoginViewController.swift */,
 			);
 			path = CoolPainter;
 			sourceTree = "<group>";
@@ -266,8 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA7BEFA1F9686E6005A8FC7 /* LoginViewController.swift in Sources */,
+				FA55D0731F97E2F7001614B0 /* DrawingViewController.swift in Sources */,
+				FA55D0761F97EC4F001614B0 /* ChatDrawingTabBarViewController.swift in Sources */,
 				FAA7BECB1F96742D005A8FC7 /* ViewController.swift in Sources */,
 				FAA7BED11F96742D005A8FC7 /* CoolPainter.xcdatamodeld in Sources */,
+				FA55D06E1F97E2AE001614B0 /* ChatViewController.swift in Sources */,
 				FAA7BEC91F96742D005A8FC7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

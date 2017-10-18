@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,15 +14,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoolPainter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="90W-ja-5zQ">
-                                <rect key="frame" x="67" y="270.5" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubbles" highlightedImage="bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="90W-ja-5zQ">
+                                <rect key="frame" x="452" y="633" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="7SV-Ky-bi5"/>
+                                    <constraint firstAttribute="height" constant="120" id="LNF-zW-9Ma"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="90W-ja-5zQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1qb-tP-raG"/>
+                            <constraint firstItem="90W-ja-5zQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ac3-OC-TtN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -39,17 +46,17 @@
             <objects>
                 <viewController id="E9A-L7-Zin" customClass="LoginViewController" customModule="CoolPainter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dkc-qU-AYn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMG-Vi-Moy">
-                                <rect key="frame" x="114.5" y="40" width="146.5" height="21"/>
+                                <rect key="frame" x="439" y="40" width="146.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VfR-EP-FI5">
-                                <rect key="frame" x="87.5" y="83" width="200" height="30"/>
+                                <rect key="frame" x="412" y="83" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="DrP-SM-qNJ"/>
                                 </constraints>
@@ -58,7 +65,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8h-s2-WsO">
-                                <rect key="frame" x="303.5" y="83" width="55.5" height="30"/>
+                                <rect key="frame" x="628" y="83" width="380" height="30"/>
                                 <state key="normal" title="Go"/>
                                 <connections>
                                     <action selector="onDoneClicked:" destination="E9A-L7-Zin" eventType="touchUpInside" id="Ila-QI-JMR"/>
@@ -86,16 +93,16 @@
             </objects>
             <point key="canvasLocation" x="705" y="134"/>
         </scene>
-        <!--Chat-->
+        <!--Drawing-->
         <scene sceneID="m5d-w7-clz">
             <objects>
-                <viewController id="jj2-zR-CLM" sceneMemberID="viewController">
+                <viewController id="jj2-zR-CLM" customClass="DrawingViewController" customModule="CoolPainter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e7N-hV-mgX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fkk-dY-FU0">
-                                <rect key="frame" x="62.5" y="580" width="250" height="30"/>
+                                <rect key="frame" x="387" y="1279" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Owj-Qp-SIA"/>
                                 </constraints>
@@ -104,7 +111,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRd-Px-fal">
-                                <rect key="frame" x="320" y="580" width="36" height="30"/>
+                                <rect key="frame" x="644.5" y="1279" width="36" height="30"/>
                                 <state key="normal" title="Send"/>
                             </button>
                         </subviews>
@@ -117,32 +124,32 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uNW-yN-TIz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chat" image="chat" id="YEe-ms-8U2"/>
+                    <tabBarItem key="tabBarItem" title="Drawing" image="pen" id="YEe-ms-8U2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wez-Ib-TTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2424.8000000000002" y="466.41679160419795"/>
         </scene>
-        <!--Drawing-->
+        <!--Chat-->
         <scene sceneID="fli-GH-OCq">
             <objects>
-                <viewController id="T0z-6f-hIj" sceneMemberID="viewController">
+                <viewController id="T0z-6f-hIj" customClass="ChatViewController" customModule="CoolPainter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rpp-kz-KeB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="UX0-5j-jXS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Drawing" image="pen" id="vZ0-uG-C6V"/>
+                    <tabBarItem key="tabBarItem" title="Chat" image="chat" id="vZ0-uG-C6V"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPM-e7-HJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2425" y="-198"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Chat Drawing Tab Bar View Controller-->
         <scene sceneID="BKT-xK-34v">
             <objects>
-                <tabBarController id="Vjx-4S-X9g" sceneMemberID="viewController">
+                <tabBarController id="Vjx-4S-X9g" customClass="ChatDrawingTabBarViewController" customModule="CoolPainter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Od4-6G-hXa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -159,7 +166,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="150" height="150"/>
+        <image name="bubbles" width="114" height="90"/>
         <image name="chat" width="24" height="24"/>
         <image name="pen" width="24" height="24"/>
     </resources>

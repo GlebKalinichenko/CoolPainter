@@ -16,6 +16,21 @@ class LoginViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "mainContentSegue") {
+            guard let chatDrawerContentViewContoller = segue.destination as? ChatDrawingTabBarViewController else {
+                fatalError()
+            }
+            
+            guard let chatViewContoller = chatDrawerContentViewContoller.viewControllers![0] as? ChatViewController else {
+                fatalError()
+            }
+            
+            chatViewContoller.nickName = nickNameTextField.text
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
